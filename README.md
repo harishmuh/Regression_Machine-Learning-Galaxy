@@ -1,20 +1,40 @@
-#  Regression Machine Learning with Galaxy
+#  **Predicting human chronological age from DNA methylation using supervised regression models with Galaxy**
 
-This project showcases my work on building a **regression model** with open source [Galaxy](https://galaxyproject.org/). 
+
+## **Context**
+
+DNA methylation changes with age at specific [CpG sites](https://en.wikipedia.org/wiki/CpG_site). These changes can act as 'biomarkers' for age prediction, and machine learning models can be trained to estimate age from such methylation features.
+
+In this project, I applied machine learning regression techniques to predict human chronological age based on DNA methylation patterns with open source [Galaxy](https://galaxyproject.org/). 
+
+### **Objectives**
+
+The objectives of this project consisted of:
+- To build and compare machine learning regression models using the Galaxy platform.
+- To evaluate model performance using standard regression metrics such as R² and RMSE.
+- To apply hyperparameter tuning using cross-validation for improving model accuracy.
+
+### **Dataset**
+
+The dataset used in this analysis contains:
+- 208 training samples with 13 CpG features and age labels.
+- 104 test samples, where models predict age.
+- True age values for the test samples are used to evaluate performance.
+
+### **Methods**
+
+I implemented and compared three regression models:
+- Linear Regression
+- Gradient Boosting Regressor
+- Tuned Gradient Boosting Regressor (via hyperparameter tuning)
+
+The regression model performance was assessed using metrics such as:
+- R² (coefficient of determination): The closer it is to 1.0, the better it is. If it is negative, then the trained model is not good. 
+- RMSE (Root Mean Squared Error): The lower the number, the better it is.
+
 
 ---
 
-## **Objectives**
-
-- Use Galaxy’s visual interface to build a regression model.
-- Predict a numerical target variable (e.g., Chronological age).
-- Evaluate the model using RMSE, MAE, R², and scatter plots.
-
----
-
-## ⚙️ Tools & Techniques
-
----
 ## **Results**
 
 ### **Linear regression performance**
@@ -55,10 +75,24 @@ This project showcases my work on building a **regression model** with open sour
 | Gradient Boosting Regressor    | 0.93     | 3.85  | Better RMSE, more robust to outliers          |
 | Tuned Gradient Boosting (n=75) | 0.94     | 3.74  | Best performance after hyperparameter tuning  |
 
+### **Insights**
+- The linear regression model was able to capture the general trend well, but it had the highest error (RMSE).
+- An Ensemble method, like Gradient Boosting, has better performance than basic linear regression and is more robust to outliers.
+- Hyperparameter tuning  of the gradient boosting was effective and necessary to optimize model performance, as we see a higher R2 score and a lower RMSE than other models.
+
 ---
 
+### **Conclusion**
+This project demonstrates that DNA methylation features can be effectively used to predict human age through machine learning regression models.
+
+* Linear Regression: Provided a strong baseline with good predictive accuracy.
+* Gradient Boosting Regressor: Improved performance over linear regression. 
+* Tuned Gradient Boosting Regressor: Hyperparameter tuning further enhanced the model performance, achieving the best R² score (0.94) and the lowest RMSE (3.74).
+
+
 ## **Assets**
-* **Workflow diagram**
+* Workflow diagram
+  
 ![Workflow diagram](https://github.com/harishmuh/Regression_Machine-Learning-Galaxy/blob/main/docs/Workflow_diagram.PNG?raw=true)
 
-* **Analysis**
+* [My Analysis in Galaxy](https://usegalaxy.eu/u/harish_muh12/h/regression-dna-methylation)
