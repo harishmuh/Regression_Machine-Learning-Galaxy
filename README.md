@@ -1,13 +1,10 @@
-# Regression Machine Learning with Galaxy
-Regression machine learning using Galaxy 
-
 #  Regression Machine Learning with Galaxy
 
-This project showcases my work on building a **regression model** using the [Galaxy Project](https://galaxyproject.org/) 
+This project showcases my work on building a **regression model** with [Galaxy](https://galaxyproject.org/). 
 
 ---
 
-## 🎯 Objectives
+## **Objectives**
 
 - Use Galaxy’s visual interface to build a regression model.
 - Predict a numerical target variable (e.g., Chronological age).
@@ -17,4 +14,5 @@ This project showcases my work on building a **regression model** using the [Gal
 
 ## ⚙️ Tools & Techniques
 
-
+---
+## **Results**
