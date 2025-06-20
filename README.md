@@ -80,15 +80,17 @@ The regression model performance was assessed using metrics such as:
 - An Ensemble method, like Gradient Boosting, has better performance than basic linear regression and is more robust to outliers.
 - Hyperparameter tuning  of the gradient boosting was effective and necessary to optimize model performance, as we see a higher R2 score and a lower RMSE than other models.
 
----
 
-### **Conclusion**
+
+## **Conclusion**
 This project demonstrates that DNA methylation features can be effectively used to predict human age through machine learning regression models.
 
 * Linear Regression: Provided a strong baseline with good predictive accuracy.
 * Gradient Boosting Regressor: Improved performance over linear regression. 
 * Tuned Gradient Boosting Regressor: Hyperparameter tuning further enhanced the model performance, achieving the best R² score (0.94) and the lowest RMSE (3.74).
 
+## **Reference**
+* [Naue et al., 2017](https://www.sciencedirect.com/science/article/pii/S1872497317301643?via%3Dihub)
 
 ## **Assets**
 * Workflow diagram
